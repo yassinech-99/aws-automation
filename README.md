@@ -46,8 +46,3 @@ This repository contains scripts to automate the creation of an EC2 instance on 
 #### Notes:
 - **AWS Credentials**:
   - It's recommended to use AWS IAM roles or securely manage your AWS Access Key ID and Secret Access Key.
-- **EC2 Instance Configuration**:
-  - Both scripts are set to launch a t2.micro instance with an Ubuntu Server AMI (`ami-053b0d53c279acc90`) in the `us-east-1` region.
-  - You can modify the `InstanceType`, `ImageId`, `KeyName`, and other parameters as needed for your use case.
-
-
