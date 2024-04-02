@@ -17,7 +17,7 @@ def manage_ec2_resource():
 
 def create_key_pairs(ec2_resource):
     try:
-        key = ec2_resource.create_key_pair(KeyName='test_keypairboto1')
+        key = ec2_resource.create_key_pair(KeyName='test_keypair_python')
         with open('private-key.pem', 'w') as write_key:
             write_key.write(key.key_material)
         chmod('private-key.pem', 0o600)
