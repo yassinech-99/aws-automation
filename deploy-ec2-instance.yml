@@ -12,7 +12,7 @@
     amazon.aws.ec2_key:
       aws_access_key: "{{aws_access_key}}" 
       aws_secret_key: "{{aws_secret_key}}" 
-      name: test_keypair
+      name: test_keypair_ansible
       region: us-east-1
     register: private-key
 
@@ -25,7 +25,7 @@
 
   - name: Launching an EC2 Ubuntu Server
     community.aws.ec2_instance:
-      key_name: test_keypair
+      key_name: test_keypair_ansible
       aws_access_key: "{{aws_access_key}}" 
       aws_secret_key: "{{aws_secret_key}}" 
       name: Ansible_Ubunto 
